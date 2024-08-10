@@ -56,7 +56,9 @@
 
 #### Depth First Search (DFS)
 **Overview**: Explores as far as possible along each branch before backtracking.
+
 **Architecture**: Uses a stack data structure.
+
 **Uses**: Solving puzzles, pathfinding in mazes.
 
 **Code Example**:
@@ -76,7 +78,9 @@ print(dfs(graph, 'A'))
 
 #### Breadth First Search (BFS)
 **Overview**: Explores all nodes at the present depth before moving on to nodes at the next depth level.
+
 **Architecture**: Uses a queue data structure.
+
 **Uses**: Shortest path in unweighted graphs, level-order traversal in trees.
 
 **Code Example**:
@@ -96,7 +100,9 @@ print(bfs(graph, 'A'))
 
 #### Depth First Iterative Deepening (DFID)
 **Overview**: Combines DFS's space efficiency and BFS's optimality.
+
 **Architecture**: Iteratively performs DFS to increasing depths.
+
 **Uses**: Memory-efficient pathfinding.
 
 **Code Example**:
@@ -127,8 +133,11 @@ print(iddfs('A', 'F'))
 ### Week 3: Heuristic Search 🌟
 
 #### Best First Search
+
 **Overview**: Uses heuristics to guide the search.
+
 **Architecture**: Uses a priority queue based on heuristic values.
+
 **Uses**: Pathfinding in AI, such as in video games.
 
 **Code Example**:
@@ -161,8 +170,11 @@ print(f"Path: {path}")
 ```
 
 #### Hill Climbing
+
 **Overview**: An iterative algorithm that starts with an arbitrary solution and makes small changes to improve it.
+
 **Architecture**: Moves to the neighbor with the highest value.
+
 **Uses**: Local optimization problems, AI games.
 
 **Code Example**:
@@ -193,16 +205,24 @@ print(f"Solution: {solution}")
 ```
 
 #### Solution Space
+
 **Overview**: The domain of all possible solutions.
+
 **Uses**: Understanding the landscape of optimization problems.
 
+
 #### Traveling Salesman Problem (TSP)
+
 **Overview**: Finding the shortest possible route visiting a set of nodes and returning to the origin node.
+
 **Architecture**: Often modeled as a graph.
+
 **Uses**: Logistics, routing problems.
 
 #### Escaping Local Optima
+
 **Overview**: Techniques like simulated annealing to avoid being trapped in local optima.
+
 **Uses**: Optimization problems, AI learning algorithms.
 
 **Code Example**:
@@ -246,7 +266,9 @@ print(f"Solution: {solution}")
 ```
 
 #### Stochastic Local Search
+
 **Overview**: Uses randomness to escape local optima.
+
 **Uses**: Optimization problems, heuristic search.
 
 ---
@@ -254,8 +276,11 @@ print(f"Solution: {solution}")
 ### Week 4: Population-Based Methods 🌐
 
 #### Genetic Algorithms (GA)
+
 **Overview**: Optimization algorithms inspired by the process of natural selection.
+
 **Architecture**: Uses populations, selection, crossover, and mutation.
+
 **Uses**: Solving complex optimization problems.
 
 **Code Example**:
@@ -290,17 +315,25 @@ print(f"Solution: {solution}, Fitness: {fitness(solution)}")
 ```
 
 #### SAT (Boolean Satisfiability Problem)
+
 **Overview**: Problem of determining if there is a truth assignment that satisfies a given Boolean formula.
+
 **Architecture**: Often approached using constraint satisfaction techniques.
+
 **Uses**: Logic circuits, software verification.
 
 #### Emergent Systems
+
 **Overview**: Systems where complex behavior emerges from simple rules.
+
 **Uses**: Modeling natural systems, decentralized AI.
 
 #### Ant Colony Optimization (ACO)
+
 **Overview**: Optimization algorithm inspired by the behavior of ants finding paths to food.
+
 **Architecture**: Uses pheromone trails and probabilistic decisions.
+
 **Uses**: Routing, TSP, scheduling.
 
 **Code Example**:
@@ -369,8 +402,11 @@ print(f"Best Path: {best_path}, Best Path Length: {best_path_length}")
 ### Week 5: Finding Optimal Paths 🛤️
 
 #### Branch & Bound
+
 **Overview**: Algorithm design paradigm for solving combinatorial optimization problems.
+
 **Architecture**: Uses bounds to prune the search space.
+
 **Uses**: Optimization problems, integer programming.
 
 **Code Example**:
@@ -421,7 +457,9 @@ print(f"Maximum Value: {branch_and_bound(items, capacity)}")
 
 #### A*
 **Overview**: Widely used pathfinding and graph traversal algorithm.
+
 **Architecture**: Uses a priority queue with costs.
+
 **Uses**: Pathfinding in AI, robotics, video games.
 
 **Code Example**:
@@ -465,15 +503,19 @@ print(f"Path: {path
 ```
 
 #### Admissibility
+
 **Concept**: A heuristic is admissible if it never overestimates the cost to reach the goal.
+
 **Uses**: Ensures optimality in algorithms like A*.
 
 #### Consistency
 **Concept**: A heuristic is consistent if, for every node n and every successor n' of n, the estimated cost of reaching the goal from n is no greater than the cost of getting to n' plus the estimated cost from n' to the goal.
+
 **Uses**: Ensures optimality and efficiency in A*.
 
 #### Efficient Heuristics
 **Concept**: Designing heuristics that are both admissible and consistent.
+
 **Uses**: Improves the performance of search algorithms.
 
 ---
@@ -482,7 +524,9 @@ print(f"Path: {path
 
 #### Backtracking
 **Overview**: A general algorithm for finding solutions to constraint satisfaction problems.
+
 **Architecture**: Uses recursive depth-first search.
+
 **Uses**: Solving puzzles like Sudoku, N-Queens problem.
 
 **Code Example**:
@@ -527,19 +571,28 @@ print(f"Solved Board: {board}")
 ```
 
 #### Variable and Value Ordering
+
 **Concepts**: Techniques to decide the order of variable and value assignments.
+
 **Uses**: Enhances the efficiency of backtracking algorithms.
 
+
 #### Filtering
+
 **Overview**: Techniques to reduce the search space by eliminating inconsistent values.
+
 **Uses**: Improves the performance of constraint satisfaction algorithms.
 
 #### Local Search
+
 **Overview**: Uses heuristic techniques to find solutions.
+
 **Uses**: Solving large and complex constraint satisfaction problems.
 
 #### Sudoku
+
 **Example**: A popular puzzle used to demonstrate constraint satisfaction techniques.
+
 **Uses**: Provides a practical application for CSP algorithms.
 
 ---
@@ -547,15 +600,21 @@ print(f"Solved Board: {board}")
 ### Week 7: Logical Inference 🧩
 
 #### Introduction to Propositional Logic
+
 **Overview**: Basics of propositional logic including syntax and semantics.
+
 **Uses**: Foundation for more complex logical reasoning in AI.
 
 #### Conjunctive Normal Form (CNF)
+
 **Overview**: A way of structuring logical formulas where a formula is a conjunction of clauses, each clause being a disjunction of literals.
+
 **Uses**: Standard form used in many logical inference and SAT solving algorithms.
 
 #### Resolution
+
 **Overview**: A rule of inference leading to a complete proof procedure for propositional logic.
+
 **Uses**: Automated theorem proving.
 
 **Code Example**:
@@ -583,11 +642,15 @@ print(f"Resolved Clauses: {clauses}")
 ```
 
 #### Proof by Refutation
+
 **Overview**: Proving the negation of a statement leads to a contradiction.
+
 **Uses**: Proving the validity of logical statements.
 
 #### The DPLL Algorithm
+
 **Overview**: A complete backtracking-based search algorithm for deciding the satisfiability of propositional logic formulas in CNF.
+
 **Uses**: SAT solvers.
 
 ---
@@ -595,11 +658,15 @@ print(f"Resolved Clauses: {clauses}")
 ### Week 8: AI Planning 🎯
 
 #### STRIPS
+
 **Overview**: A planning language and system that represents actions as having preconditions and effects.
+
 **Uses**: Automated planning in AI.
 
 #### Forward Chaining
+
 **Overview**: Inference technique that starts with known facts and applies rules to derive new facts.
+
 **Uses**: Rule-based systems, expert systems.
 
 **Code Example**:
@@ -623,7 +690,9 @@ print(f"Derived Facts: {forward_chaining(rules, facts)}")
 ```
 
 #### Backward Chaining
+
 **Overview**: Inference technique that starts with the goal and works backward to find the facts that support it.
+
 **Uses**: Goal-oriented reasoning, expert systems.
 
 **Code Example**:
@@ -645,7 +714,9 @@ print(f"Goal Achievable: {backward_chaining(rules, goal, facts)}")
 ```
 
 #### SATPlan
+
 **Overview**: A planning approach that encodes the planning problem as a Boolean satisfiability problem.
+
 **Uses**: AI planning, optimization problems.
 
 ---
@@ -653,15 +724,21 @@ print(f"Goal Achievable: {backward_chaining(rules, goal, facts)}")
 ### Week 9: AI Knowledge Representation 🧠
 
 #### Taxonomies and Ontologies
+
 **Overview**: Hierarchical structures used to represent knowledge.
+
 **Uses**: Semantic web, knowledge graphs.
 
 #### Knowledge Graphs
+
 **Overview**: Graph-based representations of knowledge.
+
 **Uses**: Search engines, recommendation systems.
 
 #### Semantic Networks
+
 **Overview**: Networks that represent semantic relations between concepts.
+
 **Uses**: Natural language processing, AI reasoning.
 
 **Example**:
@@ -680,19 +757,27 @@ plt.show()
 ### Week 10: Ethics and AI 🤖⚖️
 
 #### Ethics in AI
+
 **Concepts**: Ethical issues surrounding AI, including bias, transparency, and accountability.
+
 **Uses**: Responsible AI development.
 
 #### Social Impact
+
 **Overview**: The societal implications of AI technologies.
+
 **Uses**: Policy making, technology governance.
 
 #### AI Safety
+
 **Concepts**: Ensuring AI systems are safe and reliable.
+
 **Uses**: Critical AI systems, autonomous vehicles.
 
 #### AI Alignment
+
 **Concepts**: Ensuring AI systems' goals align with human values.
+
 **Uses**: Advanced AI systems, AGI.
 
 ---
@@ -700,11 +785,12 @@ plt.show()
 ### Week 11: Advanced Topics in AI 🚀
 
 #### Deep Learning
-**Overview**: Subfield of machine learning using neural networks with many layers.
-**Architecture**: Consists of input, hidden, and output layers.
-**Uses
 
-**: Image recognition, natural language processing.
+**Overview**: Subfield of machine learning using neural networks with many layers.
+
+**Architecture**: Consists of input, hidden, and output layers.
+
+**Uses**: Image recognition, natural language processing.
 
 **Example**:
 ```python
@@ -729,7 +815,9 @@ model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=
 ```
 
 #### Reinforcement Learning
+
 **Overview**: Training models based on reward signals.
+
 **Uses**: Game playing, robotics.
 
 **Example**:
@@ -748,7 +836,9 @@ for _ in range(1000):
 ```
 
 #### Generative Models
+
 **Overview**: Models that generate new data samples.
+
 **Uses**: Image generation, text generation.
 
 **Example**:
@@ -785,7 +875,9 @@ generated_image = generator(noise, training=False)
 ### Week 12: Capstone Project 📊
 
 #### Description
+
 **Task**: Build a comprehensive AI project integrating the concepts learned.
+
 **Components**: Problem definition, data collection, model building, evaluation, and deployment.
 
 ---
